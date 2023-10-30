@@ -47,6 +47,6 @@ public class Usuario {
         return poblacion;
     }
     public void setPoblacion(String poblacion) {
-        this.poblacion = poblacion;
+        this.poblacion = poblacion ;
     }
 }
