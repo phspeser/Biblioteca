@@ -1,13 +1,17 @@
 package com.phpeser;
 
 
+import java.util.ArrayList;
+
 public class Libro {
     private Integer ID;
     private Integer ISBN;
     private String titulo;
-    private String autor;
-    private String genero;
+    private ArrayList<Autor> autor;
+    private ArrayList<Genero> genero;
     private String fechaPublicacion;
+
+    private Prestado prestado;
 
     public Integer getID() {
         return ID;
@@ -28,18 +32,20 @@ public class Libro {
         this.titulo = titulo;
     }
 
-    public String getGenero() {
-        return genero;
-    }
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-
-    public String getAutor() {
+    public ArrayList<Autor> getAutor() {
         return autor;
     }
-    public void setAutor(String autor) {
+
+    public void setAutor(ArrayList<Autor> autor) {
         this.autor = autor;
+    }
+
+    public ArrayList<Genero> getGenero() {
+        return genero;
+    }
+
+    public void setGenero(ArrayList<Genero> genero) {
+        this.genero = genero;
     }
 
     public String getFechaPublicacion() {
@@ -47,5 +53,13 @@ public class Libro {
     }
     public void setFechaPublicacion(String fechaPublicacion) {
         this.fechaPublicacion = fechaPublicacion;
+    }
+
+    public Prestado getPrestado() {
+        return prestado;
+    }
+
+    public void setPrestado(Prestado prestado) {
+        this.prestado = prestado;
     }
 }

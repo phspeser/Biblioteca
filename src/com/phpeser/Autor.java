@@ -10,6 +10,10 @@ public class Autor {
     //fecNac = Fecha de Nacimiento
         private String locNac;
     //locNac = Localidad de Nacimiento
+    private Libro libro;
+
+    private Genero genero;
+
 
     public Integer getIdAutor() {
         return idAutor;
@@ -40,5 +44,25 @@ public class Autor {
     }
     public void setLocNac(String locNac) {
         this.locNac = locNac;
+    }
+
+    public void setIdAutor(Integer idAutor) {
+        this.idAutor = idAutor;
+    }
+
+    public Libro getLibro() {
+        return libro;
+    }
+
+    public void setLibro(Libro libro) {
+        this.libro = libro;
+    }
+
+    public Genero getGenero() {
+        return genero;
+    }
+
+    public void setGenero(Genero genero) {
+        this.genero = genero;
     }
 }

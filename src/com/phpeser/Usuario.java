@@ -1,5 +1,7 @@
 package com.phpeser;
 
+import java.util.ArrayList;
+
 public class Usuario {
     private String nombre;
     private String apellidos;
@@ -7,6 +9,8 @@ public class Usuario {
     private Integer telefono;
     private String direccion;
     private String poblacion;
+
+    private ArrayList<Prestado> prestados;
 
     public String getNombre() {
         return nombre;
@@ -48,5 +52,13 @@ public class Usuario {
     }
     public void setPoblacion(String poblacion) {
         this.poblacion = poblacion ;
+    }
+
+    public ArrayList<Prestado> getPrestados() {
+        return prestados;
+    }
+
+    public void setPrestados(ArrayList<Prestado> prestados) {
+        this.prestados = prestados;
     }
 }
